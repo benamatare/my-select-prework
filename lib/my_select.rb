@@ -6,7 +6,7 @@ def my_select(collection)
     holder = []
     if collection.size == 0
       return collection
-    elsif array.each do |value|
+    elsif collection.each do |value|
       holder << yield(value)
     end
  hold
