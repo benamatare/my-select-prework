@@ -3,11 +3,14 @@
 
 
 def my_select(collection)
-    holder = []
-    if collection.size == 0
-      return collection
-    elsif collection.size < 1
-      collection.each do |num| num.even?
-   end
-   collection
+ holder = []
+ counter = 0
+ 
+ while counter < collection.length
+    if yield(collection[counter]) == true 
+       holder << collection[counter]
+       end
+      counter += 1
+    end
+ holder
 end
