@@ -5,9 +5,9 @@
 def my_select(collection)
  holder = []
  counter = 0
- 
+
  while counter < collection.length
-    if yield(collection[counter]) == true 
+    if yield(collection[counter]) == true
        holder << collection[counter]
        end
       counter += 1
