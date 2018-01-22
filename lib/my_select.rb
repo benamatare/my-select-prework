@@ -6,9 +6,8 @@ def my_select(collection)
     holder = []
     if collection.size == 0
       return collection
-    elsif collection.each do |value|
-      holder << yield(value)
-    end
- holder {|value| value.even?}
+    elsif collection.size < 1
+      collection.each do |num| num.even?
    end
+   collection
 end
