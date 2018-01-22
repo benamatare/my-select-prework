@@ -9,6 +9,6 @@ def my_select(collection)
     elsif collection.each do |value|
       holder << yield(value)
     end
- hold
+ holder
    end
 end
